@@ -98,7 +98,7 @@ def wh_dataedit():
     results = sql_query(''' SELECT * FROM warehouse''')
     return render_template('warehouse.html', results=results)
 
-@app.route('/',methods = ['POST', 'GET']) #this is when user submits an edit
+@app.route('/',methods = ['POST', 'GET'])
 def render_main():
     return render_template('main.html')
 
